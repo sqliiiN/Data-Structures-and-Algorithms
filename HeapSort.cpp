@@ -2,8 +2,8 @@
 //  main.cpp
 //  Heapsort
 //
-//  Created by 尤优 on 2018/9/5.
-//  Copyright © 2018年 尤优. All rights reserved.
+//  Created on 2018/9/5.
+//  Copyright © 2018年. All rights reserved.
 //
 
 #include <iostream>
@@ -37,12 +37,10 @@ void HeapSort(vector<int> &vec, int num){
     
     int i, t;
     
-    // 为什么只要这么多次？
     for(i = (num-2)/2; i >= 0; i--){
         shiftdown(vec, i, num);
     }
     
-    // 在干嘛
     for(i = num-1; i > 0; i--){
         t = vec[i];
         vec[i] = vec[0];
